@@ -1,0 +1,46 @@
+.panel, .flip {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #555;
+    color: white;
+    border: solid 1px #666;
+    border-radius: 3px;
+  }
+  
+  .panel {
+    padding: 50px;
+    display: none;
+  }
+
+  /*second article*/
+  .panel2, .flip2 {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #555;
+    color: white;
+    border: solid 1px #666;
+    border-radius: 3px;
+  }
+  
+  /* third article */
+  .panel2 {
+    padding: 50px;
+    display: none;
+  }
+
+  .panel3, .flip3 {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #555;
+    color: white;
+    border: solid 1px #666;
+    border-radius: 3px;
+  }
+  
+  .panel3 {
+    padding: 50px;
+    display: none;
+  }
