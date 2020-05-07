@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>my website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script scr="javascript/script.js"></script>
+  <script src="https://kit.fontawesome.com/a3b990b597.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+<section>
+<header class="header text-center"  style="margin-bottom:0;">
+   <div class="row">
+       <div class="col-md-3"><img src="images/icon.png" alt="icon"></div>
+       <div class="col-md-9 text-center text-white"><h1 style="font-style: italic; border-bottom: 2px solid black; color:red; font-weight: bold;">Exploring Web , Inspiring Innovation</h1></div>
+      </div>
+  
+</header>
+</section>
+
+<section>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark .hidden-sm">
+  <a class="navbar-brand active" href="index.html" >Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link" href="mha.html">Guidelines</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="covid.html">Covid-19</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+</section>
+
+<main>
+<div class="container-fluid" style="margin-top:0px">
+  <div class="row">
+    <div class="col-md-2 " id="hide">
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="mha.html">MHA Guidelines</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link text-white active" href="covid.html">COVID-19</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="articles.html">articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="prec.html">Precautions</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-md-8">
+      <h2 style="font-weight: bold;">Covid-19 lockdown: check full list of <b style="color: green;">Green</b>, <b style="color: orange;">Orange</b> and <b style="color: red;">Red</b> here : </h2>
+      <div ><img src="images/mapdist.jpg" style="border-radius: 50px; height: 140px; width:100%;" alt=""></div>
+      <div class="articles">
+        <img src="https://images.indianexpress.com/2020/05/indiaredzonesmay3.png" alt="">
+        <a href="https://indianexpress.com/article/india/covid-19-lockdown-centre-identifies-red-green-orange-zones-for-week-after-may-3-check-full-list-here-6388654/">
+         [source]</a>
+         <br>
+         <br>
+         <!-- javascript code to down the image -->
+         <!--it will open the all the list of the district divided in the respected zone-->
+         <script> 
+          $(document).ready(function(){
+            $("#flip").click(function(){
+              $("#panel").slideDown(1000);
+            });
+            $("#stop").click(function(){
+              $("#panel").slideUp(1000);
+            });
+          });
+          </script>
+
+          <!-- css code for the sliding pannel -->
+
+          <style> 
+            #panel, #flip {
+              padding: 5px;
+              font-size: 18px;
+              text-align: center;
+              background-color: white;
+              color: red;
+              border: solid 1p white;
+              border-radius: 3px;
+            }
+            
+            #panel {
+              padding: 50px;
+              display: none;
+            }
+            </style>
+          
+          <!-- html code for the sliding menu -->
+          <div id="flip"><a href="#flip" style="font-size: medium; color: red; font-weight: bold; margin-top: 20px;">>>click here for list of zonal classification of districts</a></div>
+          <div id="panel">
+            <img src="https://images.indianexpress.com/2020/05/zonalclassificationmay3-1.png">
+            <img src="https://images.indianexpress.com/2020/05/zonalclassificationmay3-2.png" alt="">
+            <img src="https://images.indianexpress.com/2020/05/zonalclassificationmay3-3.png" alt="">
+            <img src="https://images.indianexpress.com/2020/05/zonalclassificationmay3-4.png" alt="">
+            <img src="https://images.indianexpress.com/2020/05/zonalclassificationmay3-5.png" alt="">
+            <center><button id="stop">Close the list</button></center>
+          
+          </div>
+          
+
+         
+      </div>
+      
+
+    <!-- about section is started from here -->
+      <section class="about" id="about">
+        <h2 class="text-center" style="color: blue; font-weight: bold; text-decoration: underline;">About</h2>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <img style="height:140px; width:140px; border-radius: 200px; "class="about-img" src="images/about.jpg" alt="pic">
+          </div>
+          <div class="col-sm-9">
+            Hello Guys! <br> <address style="font-style: italic;">This website is created to provide the 
+              content related to the current empidemic through which whole world is suffering.<br>
+              the source of information is various other websites and news media.<br>
+              ~ARNAV PANDEY
+            </address>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="col-md-2" id="more">
+        
+      <h3 class="text-center" style="text-decoration: underline; color: red;">Ad</h3>
+      <ul class="articles-list" style="list-style: none;">
+        <li><a style="color:yellow;" href=""></a></li>
+        <li><a style="color:yellow;" href=""></a></li>
+        <li><a style="color:yellow;" href=""></a></li>
+       
+      </ul>
+      
+      <h2 class="text-center" style="text-decoration: underline; color: blue; margin-top: 200px;">CONTACT</h2>    
+      <h2 class="text-center"> 
+        <a  class="text-white" href="https://www.facebook.com/sonu.pandey.7758235"><i class="fab fa-facebook-square"></i></a>&nbsp;&nbsp;|&nbsp;<a  class="text-white" href=""><i class="fab fa-linkedin-in"></i></a>  
+      </h2>
+
+
+  </div>
+  </div>
+</div>
+</main>
+
+<section >
+  <div class="footer text-center"  id="footer" style="margin-bottom:0">
+    <p> &copy copyright 2020 || &nbsp; &nbsp; <i class="fas fa-home"></i> </p>
+  </div>
+  </section>
+
+</body>
+</html>
